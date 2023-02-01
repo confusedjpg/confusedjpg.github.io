@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(13,12,12); /*not sure*/
+    color: white;
+}
+
+main {
+    margin-top: 50vh;
+    font-size: 90px;
+    /* change the animation to something else?*/
+    background-image: 
+    linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-animation 200s linear infinite;
+}
+
+@keyframes rainbow-animation {
+    to {
+        background-position: 4500vh;
+    }
+}
