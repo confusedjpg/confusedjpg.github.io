@@ -1,14 +1,17 @@
 * {
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
-    background-color: rgb(13,12,12); /*not sure*/
+    background-color: rgb(13,12,12);
     color: white;
 }
 
 main {
     margin-top: 50vh;
     font-size: 90px;
-    /* change the animation to something else?*/
+    /* 
+    change the animation to something else?
+    or remove it entirely!
+    */
     background-image: 
     linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red); 
     -webkit-background-clip: text;
