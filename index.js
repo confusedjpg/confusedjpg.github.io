@@ -15,7 +15,7 @@ function nggyu() {
 nggyu();
 
 function typing() { // thanks Hyperplexed for code explanation
-    const phrases = ["confused.jpg", "a student", "a tech enthusiast", "a developer", "learning", "having fun", "deleting System32", "reading Stack Overflow", "trying", "rm -rf /*", "fixing code", "breaking code", "coding at 3 A.M"];
+    const phrases = ["confused.jpg", "a student", "a tech enthusiast", "a developer", "learning", "having fun", "deleting System32", "reading Stack Overflow", "trying", "rm -rf /*", "fixing code", "breaking code", "coding at 3 A.M", "(not) serious", "dumb"];
     const main = document.querySelector("main span")
     const letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     let text = main.textContent;
