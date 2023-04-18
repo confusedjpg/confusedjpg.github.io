@@ -1,17 +1,26 @@
 * {
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Space Mono', monospace;
     background-color: rgb(13,12,12);
     color: white;
 }
 
+a {
+    color: rgb(190, 57, 34);
+}
+
+a:hover a:visited {
+    color: black;
+    background-color: rgb(190, 57, 34);
+    text-decoration: dotted;
+}
+
 main {
     margin-top: 50vh;
-    font-size: 90px;
-    /* 
-    change the animation to something else?
-    or remove it entirely!
-    */
+    font-size: 75px;
+}
+
+main span {
     background-image: 
     linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red); 
     -webkit-background-clip: text;
@@ -21,6 +30,17 @@ main {
 
 @keyframes rainbow-animation {
     to {
-        background-position: 4500vh;
+        background-position: 1500vh;
     }
+}
+
+p {
+    color: gray;
+}
+
+footer {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0%;
+    position: fixed;
 }
