@@ -15,8 +15,13 @@ a:hover a:visited {
     text-decoration: dotted;
 }
 
+div {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 main {
-    margin-top: 50vh;
     font-size: 5vw; /* responsive! */
 }
 
@@ -34,13 +39,13 @@ main span {
     }
 }
 
-p {
+p, li{
     color: gray;
-    font-size: 2vmin;
+    font-size: 1.5vmax;
 }
 
 footer {
-    font-size: 2vmin;
+    font-size: 1.5vw;
     left: 50%;
     transform: translate(-50%, -50%);
     bottom: 0%;
