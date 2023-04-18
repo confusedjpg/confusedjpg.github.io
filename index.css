@@ -17,7 +17,7 @@ a:hover a:visited {
 
 main {
     margin-top: 50vh;
-    font-size: 75px;
+    font-size: 5vw; /* responsive! */
 }
 
 main span {
@@ -36,9 +36,11 @@ main span {
 
 p {
     color: gray;
+    font-size: 2vmin;
 }
 
 footer {
+    font-size: 2vmin;
     left: 50%;
     transform: translate(-50%, -50%);
     bottom: 0%;
