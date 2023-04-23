@@ -45,3 +45,18 @@ function typing() { // thanks Hyperplexed for code explanation
 }
 
 typing();
+
+function follow(event) {
+    let width = window.innerWidth, height = window.innerHeight;
+    let blob = document.getElementById("blob");
+    
+    blob.style.top = `${event.clientY}px`;
+    blob.style.left = `${event.clientX}px`;
+    
+    let g = (event.clientX / width) * 255;
+    let b = (event.clientY / height) * 255;
+    
+    blob.style.backgroundColor = `rgb(${b}, ${g}, ${b})`;
+  }
+  
+document.addEventListener("mousemove", follow);

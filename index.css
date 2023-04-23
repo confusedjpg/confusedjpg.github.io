@@ -1,28 +1,20 @@
 * {
     box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: clamp(100%, 1rem + 2vw, 24px);
     font-family: 'Space Mono', monospace;
     background-color: rgb(13,12,12);
     color: white;
 }
 
-a {
-    color: rgb(190, 57, 34);
-}
-
-a:hover a:visited {
-    color: black;
-    background-color: rgb(190, 57, 34);
-    text-decoration: dotted;
-}
-
-div {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 main {
-    font-size: 5vw; /* responsive! */
+    font-size: clamp(100%, 1rem + 5vw, 60px);
 }
 
 main span {
@@ -33,6 +25,16 @@ main span {
     animation: rainbow-animation 200s linear infinite;
 }
 
+a {
+    color: rgb(190, 57, 34);
+}
+
+div {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 @keyframes rainbow-animation {
     to {
         background-position: 1500vh;
@@ -41,10 +43,21 @@ main span {
 
 p, li{
     color: gray;
-    font-size: 1.5vmax;
 }
 
-footer {
-    font-size: 1.5vw;
+header {
     text-align: center;
 }
+
+#blob {
+    background-color: none;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    filter: blur(200px);
+    transform: translate(-50%, -50%)
+  }
