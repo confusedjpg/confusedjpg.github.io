@@ -3,61 +3,65 @@
 }
 
 html {
-    font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-size: clamp(100%, 1rem + 2vw, 24px);
-    font-family: 'Space Mono', monospace;
-    background-color: rgb(13,12,12);
-    color: white;
+  font-size: 16px;
+  font-family: 'Space Mono', monospace;
+  background-color: black;
+  color: grey;
 }
 
 main {
-    font-size: clamp(100%, 1rem + 5vw, 60px);
+	height: 100vh;
+  position: relative;
 }
 
-main span {
-    background-image: 
-    linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red); 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: rainbow-animation 200s linear infinite;
+#nice-text {
+  color: lightgrey;
+  border-bottom: 2px dashed tomato;
 }
 
-a {
-    color: rgb(190, 57, 34);
+h1, h2, .links, footer {
+  text-align: center;
 }
 
-div {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
+a:any-link {
+  color: tomato;
+  text-decoration: none;
+  padding: 3px;
+  transition: background 0.5s;
 }
 
-@keyframes rainbow-animation {
-    to {
-        background-position: 1500vh;
-    }
+a:hover {
+  color: rgb(13,12,12);
+  background: tomato;
 }
 
-p, li{
-    color: gray;
+#about-me, li {
+  color: lightgrey;
+  white-space: pre-line;
+  width: 800px;
+  margin: auto;
 }
 
-header {
-    text-align: center;
+.great {
+  font-size: 25px;
+  color: red;
 }
 
 #blob {
-    background-color: none;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
-    filter: blur(200px);
-    transform: translate(-50%, -50%)
+  background-color: none;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  filter: blur(100px);
+  opacity: .5;
+  transform: translate(-50%, -50%);
+  transition: transform 0.8s cubic-bezier(0.33, 1, 0.68, 1);
   }
