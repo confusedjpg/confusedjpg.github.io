@@ -43,32 +43,3 @@ function follow(event) {
 }
 
 document.addEventListener("mousemove", follow);
-
-const cards = document.querySelectorAll(".neat-card");
-
-function showInfo(e, card) {
-  if (!e.shiftKey) {
-    const info = document.createElement("div");
-    info.id = "neat-info";
-    info.innerHTML = card.dataset.info;
-    if (card.dataset.info.includes("<a>")) {
-      info.innerHTML += "<p id='tip'>Tip: SHIFT to interact.</p>";
-    }
-    info.style.top = `${e.y + 5}px`;
-    info.style.left = `${e.x + 5}px`;
-    card.addEventListener("mousemove", (e) => {
-      if (!e.shiftKey) {
-        info.style.top = `${e.y + 5}px`;
-        info.style.left = `${e.x + 5}px`;
-      }
-    });
-    card.appendChild(info);
-    card.addEventListener("mouseleave", () => {
-      info.remove();
-    }); 
-  }
-}
-
-cards.forEach((card) => {
-  card.addEventListener("mouseenter", (e) => showInfo(e, card)); 
-});
