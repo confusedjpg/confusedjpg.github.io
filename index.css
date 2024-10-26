@@ -14,7 +14,7 @@ body {
 }
 
 main {
-	height: 100vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -35,7 +35,7 @@ footer {
 a:any-link {
   color: tomato;
   text-decoration: none;
-  padding: 3px;
+  padding: 1px;
   transition: background 0.5s;
 }
 
@@ -69,4 +69,10 @@ a:hover {
   opacity: .5;
   transform: translate(-50%, -50%);
   transition: transform 0.8s cubic-bezier(0.33, 1, 0.68, 1);
-  }
+}
+
+#refreshlink::before {
+  content: url("assets/refresh.svg");
+  position: relative;
+  top: 5px;
+}
