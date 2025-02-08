@@ -1,71 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="index.css" />
-      <link rel="icon" type="image/x-icon" href="assets/confused.jpg"/>
-      <title>confused.jpg | professionally stupid</title>
-      <script src="index.js" defer></script>
-    </head>
-    <body>
-      <main>
-        <h1 id="main">Hi, I'm <span id="nice-text">confused.jpg</span></h1>
-        <p class="links">
-          <a href="#here">About Me</a>
-          <a href="https://github.com/confusedjpg">Github</a>
-          <a href="https://codepen.io/confusedjpg">Codepen</a>
-          <a href="mailto:confused.jpg@gmail.com"><abbr title="confused.jpg@gmail.com">Email</abbr></a>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- NOTE: maybe trying to access fonts locally whenever the Local Fonts API becomes more widespread could be a good idea -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+    <!-- TODO: choose another icon -->
+    <link rel="icon" type="image/x-icon" href="assets/mraw.gif"/>
+    <title>confused.jpg</title>
+    <script src="load_theme.js"></script>
+    <!-- apparently i don't have to specify defer here because it's ignored when used with async (see mdn), but i'll still keep it to be safe -->
+    <script src="index.js" defer async></script>
+  </head>
+  <body>
+    <div id="everything">
+      <div id="content">
+        <div id="card">
+          <img id="card-img" src="assets/confused.png" />
+          <div id="card-text">
+            <p id="card-title">Hi, I'm <span id="changing-title" class="nice-text">confused.jpg</span></p>
+            <p id="content-card-links">
+              <a id="card-theme-toggle"></a>
+              <a href="https://github.com/confusedjpg">Github</a>
+              <a href="https://www.youtube.com/@confusedjpg">Youtube</a>
+              <a href="https://ko-fi.com/confusedjpg">a kebab anyone?</a>
+              <br />
+              <a href="mailto:confused.jpg@gmail.com">confused.jpg@gmail.com</a>
+            </p>
+          </div>
+        </div>
+        <h2>About Me</h2>
+        <p class="content-about-me">
+          <span class="nice-text wavify" style="color: var(--theme-color);">tl;dr</span>: hello, I'm confused.jpg. I talk to computers and sometimes they talk back. yours could talk back too, for the very low price of <span class="shakify">my survival</span>!
+          if you really need to reach me, email is your best option.
+
+          I'm a student from the <a href="https://en.wikipedia.org/wiki/Moldova" target="_blank">Republic of Moldova</a> (small, lovely Eastern European country; you're more than welcome to visit!), currently living in France.
+          I'm studying for a <span class="nice-text">Computer Science BSc</span> (September 2023-now).
+
+          At the time of writing this, I spend a lot of time playing around with <span class="nice-text">C</span>, <span class="nice-text">Python</span>, and <span class="nice-text">Dart</span> (which can go hand-in-hand with <span class="nice-text">Flutter</span> for beautiful cross-platform apps).
+
+          I also have some experience in web dev (<span class="nice-text">HTML + CSS + JS</span>, <span class="wavify" style="color: #d99f00;">the golden trio</span>), but I don't give it nearly as much attention as it needs, so it's more like a hobby? (see for yourself, this page is coded by hand, continuously updated, and hosted on Github).
+          I <span class="wavify" style="color: magenta">love</span> experimenting and trying new things all the time.
+
+          My main interest and daily activies point to <span class="nice-text">software engineering</span>. I'm equally interested in frontend and backend: at my eyes, software has to be both <span class="nice-text">functional</span> <i>and</i> <span class="nice-text">pleasing</span> to the eyes. In addition to that: safe, concise, and <span class="nice-text"><i><b>readable</b></i></span> code is not an option but a <span class="shakify" style="font-size: 20px;">requirement</span> (don't quote me on that).
+          On a separate note, I'm highly interested in <span class="nice-text">cybersecurity</span>. Although I'm still very much a beginner.
+
+          As for hobbies, I enjoy reading, playing the piano and treating myself to some video games when I can. But the thing I do most is learning new stuff, about anything really.
         </p>
-      </main>
-          <h2 id="here">About Me</h2>
-    <p id="about-me">I'm a student from the <a href="https://en.wikipedia.org/wiki/Moldova" target="_blank">Republic of Moldova</a> (small, lovely Eastern European country..please visit :D), currently living and studying in France. 
-    I spend most of my time studying. I love experimenting with whatever language or framework caught my interest at the moment.
-    
-    At the time of writing this, I spend a lot of time playing around with C (and network programming), Python, and Dart (for any console programs, or which can go hand-in-hand with Flutter for beautiful cross-platform apps). I also have some experience in web dev (HTML + CSS + JS, the golden trio), but it's not my main focus, so I consider it a hobby. (see for yourself, this page you're on is coded from the ground up)
-    I'm also interested in cybersecurity, and especially bug hunting, but I'm far from an acceptable level.
-    
-    I've never contributed to a project made by someone else, <b>yet</b> (personal, messy contributions aside). But if you think my profile interests you and is suited for <b>any</b> development project, feel free to contact me!
-    I don't require any payment, just contributing and acquiring experience is enough for me.
-    
-    Also if you want to check some of my works, head to my <a href="https://github.com/confusedjpg">Github</a> or <a href="https://codepen.io/confusedjpg">Codepen</a> for some examples.
-    
-    
-    Hobbies? Well, I like playing the piano and listening to music. I also enjoy reading and playing video games when I've got the time.
-    But the activity that consumes most of my time is learning. I like learning new stuff, even if the new information taking space in my brain is obscure and not that useful.
-    Random fact: <a id="refreshlink"></a> <a href="https://en.wikipedia.org/wiki/Pizza_theorem" target="_blank" id="randlink">a pizza can be cut in very interesting ways and still be equally shared between 2 people.</a> 
+        <div id="content-random-facts">
+          Here's stuff: <a id="refreshlink"></a> <a href="https://en.wikipedia.org/wiki/Pizza_theorem" target="_blank" id="randlink">a pizza can be cut in very interesting ways and still be equally shared between 2 people.</a>
+        </div>
+        <p class="content-about-me">
+          I also enjoy learning new languages.
+        <span class="nice-text">Romanian</span> is my native language. I can speak <span class="nice-text">English</span> and <span class="nice-text">French</span> on a fluent level (both in a casual and professional context), and I'm currently focusing on Japanese.
+          There are a few other languages (Russian, Spanish, German, Finnish, Polish and Latin) which span from basic sentence structure with a pinch of vocabulary, to a broken conversational level. However, these aren't languages I'm exposed to on a daily basis, nor do I focus on them extensively; which means they're just patiently <span class="wavify">stagnating</span> for now.
 
-    I especially enjoy learning new languages! My native language is Romanian (considering I was raised in Moldova, yes I do have <i>that</i> accent and I often use words that combine Romanian and Russian, so what? if you're cool, I'll do my best to speak "clean" Romanian), but I also got used to Russian (USSR annexation and its consequences).
-    Then, I learned English throughout the years on my own, thanks English media.
-    Some years ago I moved to France so I ended up getting fluent in French, too (with some existing basics from my French classes).
-    
-    And now, I wanna learn way too many languages. Japanese and Finnish are appealing due to how different they seem to me compared to what I know, and they sound nice.I wanna continue learning Spanish (I had mandatory classes in middle and high school), or improving my rusty Russian.
-    Polish and German got me interested as well..
-    This is what I meant, I'm currently very very indecisive about this topic.
+        You think I can help you with a development project? Wanna help me pay my bills?
+          <span class="shakify" style="color: #025dcc">[sigh]</span>
+          Or... just wanna chat?
+          Feel free to contact me using any method I've linked around here, I'm always open to communication!
 
-    Languages are fun though, and taking the time to study the differences and similarities between them is a rewarding process, at least in my opinion. And it allowed me to meet some great people, so that's a plus!
-    
+          Thanks for passing by!
+      </div>
+      <div id="aside">
+        <p>Additional</p>
+        <abbr title="confused.jpg">discord</abbr>
+        <!-- this looks weirdly comforting -->
+        <a href="https://t.me/confusedjpg">telegram</a>
+        <a href="https://t.me/confused_jpg">telegram dump</a>
+        <a href="https://justinjackson.ca/webmaster/">x1</a>
+        <a href="https://motherfuckingwebsite.com/">x2</a>
+        <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">worth watching</a>
+        <a href="https://steamcommunity.com/id/confused_jpg">steam</a>
+        <a href="https://codepen.io/confusedjpg">codepen</a>
+        <a href="https://filiph.net/">filip!</a>
+        <a href="https://code.golf/golfers/confusedjpg">code.golf</a>
+        <a href="https://skilldrick.github.io/easy6502/">6502</a>
+        <a href="https://mortenhannemose.github.io/lena/">ethical lena</a>
+        <a href="https://confusedjpg.github.io/rot-x/">rotx</a>
+        <a href="https://youtu.be/snAhsXyO3Ck">spaceship u</a>
+        <a href="https://0.30000000000000004.com/">0.3?</a>
+        <a href="https://tails.net/">tails</a>
+        <a href="https://www.crunchbangplusplus.org/">#!++</a>
+        <a href="https://unlicense.org/">unlicense</a>
+        <a href="https://www.debian.org/">deb</a>
+        <a href="https://www.raylib.com/">raylib</a>
+        <a href="https://oeis.org/">oeis</a>
+        <a href="https://citrons.xyz/">citrons</a>
+        <a href="https://billwurtz.com/">bill wurtz</a>
+        <a href="https://qwerasd205.github.io/PixelCode/index.html">pixel code</a>
+        <a href="https://www.privacyguides.org">privacy</a>
+        <a href="https://mullvad.net/en">mullvad</a>
+        <a href="https://www.stilldrinking.org/programming-sucks">it sucks</a>
+        <a href="https://theretroweb.com/motherboards/s/asus-m2a-vm"><3</a>
+        <a href="https://en.wikipedia.org/wiki/Terry_A._Davis">terry!</a>
+        <a href="https://www.chrissawyergames.com/">chris!</a>
+        <a href="https://neocities.org/">neocities</a>
+        <a href="https://www.redeclipse.net/">red eclipse</a>
+      </div>
+    </div>
 
-    This about me page is really long huh, sorry for that. At this point, it would probably be cleaner to leave the main info here, and then make different "posts" for the rest. Hmm...
+    <footer>
+      <!-- oh but it's not over -->
+      <img src="assets/800x600.gif" />
+      <img src="assets/affection.gif" />
+      <img src="assets/anydamn.gif" />
+      <img src="assets/bandwith-cs.gif" />
+      <img src="assets/best-eyes.gif" />
+      <img src="assets/brainmade.png" />
+      <img src="assets/deathclassic.png" />
+      <img src="assets/drpepper.gif" />
+      <img src="assets/email-now.gif" />
+      <img src="assets/firefox.gif" />
+      <img src="assets/firefoxuser.gif" />
+      <img src="assets/foreveronline.gif" />
+      <img src="assets/github.gif" />
+      <img src="assets/godot.png" />
+      <img src="assets/graphicpassion.png" />
+      <img src="assets/gutenberg.gif" />
+      <img src="assets/haiku-now.png" />
+      <img src="assets/html-today.gif" />
+      <img src="assets/hatems.jpg" />
+      <img src="assets/ilovunder.png" />
+      <img src="assets/internet-free.gif" />
+      <img src="assets/javanow.gif" />
+      <img src="assets/kofi.gif" />
+      <img src="assets/landscape.png" />
+      <img src="assets/linuxnow.jpg" />
+      <img src="assets/netscape.gif" />
+      <img src="assets/never-explerror.gif" />
+      <img src="assets/nft-no.gif" />
+      <img src="assets/nukeie.gif" />
+      <img src="assets/paywallsuck.gif" />
+      <img src="assets/pngnow.png" />
+      <img src="assets/powered-by-debian.gif" />
+      <img src="assets/probe-now.gif" />
+      <img src="assets/rave-now.gif" />
+      <img src="assets/ruffle.png" />
+      <img src="assets/srgb-now.png" />
+      <img src="assets/sssfw.gif" />
+      <img src="assets/tf.gif" />
+      <img src="assets/underconstruction.png" />
+      <img src="assets/vim.gif" />
+      <img src="assets/w7.gif" />
+      <img src="assets/web3sux.gif" />
+      <img src="assets/what.gif" />
+      <img src="assets/wip.gif" />
+      <img src="assets/wrc-bad.png" />
+      <img src="assets/ytdl.gif" />
+    </footer>
 
-    On that note, do you want to read some miscellaneous facts? No? <span class="great"><b><i>GREAT.</i></b></span><ul>
-    <li>I'm 1.93m (6.3ft) and my goal was to get to 2m, but that's a blurry possibility.</li>
-    <li>I escaped from my kindergarten when I was younger. Luckily they found me not far away, heading towards my house apparently.</li>
-    <li>I can't say Rrrr the correct way I'm supposed to in Romanian (or Spanish). I can fake it when I'm casually speaking though, which works out just good enough.</li>
-    <li>I'm a very obvious introvert, but I love meeting new people and learning about their unique experiences. It's just so fascinating how wildly different our lives and perceptions of the world around us are.</li>
-    <li>I knew how to count to 100 in Italian at around 5 years old, that's impressive, right??? Well if you don't agree then uh, <span class="great">you're not invited to my birthday party.</span> Ahem, sorry.</li>
-    <li>I've used 'I' way too many times on this page.</li>
-      </ul></p>
-      <footer>
-          <h3>Some other stuff.</h3>
-          <abbr title="confused.jpg">Discord</abbr>
-          <a href="https://t.me/confusedjpg"><abbr title="confusedjpg">Telegram</abbr></a>
-          <a href="https://justinjackson.ca/webmaster/">x1</a>
-          <a href="https://motherfuckingwebsite.com/">x2</a>
-          <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Worth watching</a>
-      </footer>
-        <div id="blob"></div>
-    </body>
+    <p id="low">designed with &lt;3 by me and my brain</p>
+
+    <div id="blob"></div>
+  </body>
 </html>
